@@ -1,6 +1,7 @@
 # LEARN Sass
 <h3>Description:</h3>
 <p>This repository shows my pathway to mastering my Sass skills using Youtube videos as reference. Please have in mind that this repository was only made for educational purposes and nothing else.</p>
+<strong>Demo Link for the Portfolio Site:</strong> https://codestackr.github.io/portfolio-sass/dist/
 
 <h3>References:</h3>
 <ul>
