@@ -1,0 +1,42 @@
+$primary-color: #272727;
+$secondary-color: #ff652f;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+
+/* Display the opposite color in terms of lightness */
+@function set-text-color($color) {
+    @if (lightness($color) > 40%) { // Check this: https://www.w3schools.com/css/css_colors_hsl.asp
+        @return #000;
+    } @else {
+        @return #fff;
+    }
+}
+
+/* Devices from 768px until 1024px */
+@mixin media-md {
+    @media screen and (min-width:768px){
+        @content;
+    }
+}
+
+/* Devices from 1024px until 1600px*/
+@mixin media-lg {
+    @media screen and (min-width:1024px){
+        @content;
+    }
+}
+
+/* Devices from 1600px */
+@mixin media-xl {
+    @media screen and (min-width:1600px){
+        @content;
+    }
+}
